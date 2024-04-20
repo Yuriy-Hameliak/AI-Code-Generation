@@ -66,9 +66,12 @@ if __name__ == "__main__":
     # from acro_new import create_acronym as new
     # from acro_new import EXAMPLE as n
     # from acro_old import create_acronym as old
-    from ceasar_new import caesar_encode as new
-    from ceasar_new import EXAMPLE as n
-    from ceasar_old import caesar_encode as old
+    # from ceasar_new import caesar_encode as new
+    # from ceasar_new import EXAMPLE as n
+    # from ceasar_old import caesar_encode as old
+    from new_create_table import create_table as new
+    from new_create_table import EXAMPLE as n
+    from old_create_table import create_table as old
     GROUPED_ARGS = True # if given all arguments as tuple change to True
 
     #####################################################################################
