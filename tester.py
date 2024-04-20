@@ -62,16 +62,28 @@ if __name__ == "__main__":
     # Guys, edit this section as needed :)                                              #
     #####################################################################################
 
-    REPETITIONS = 1000000
+    REPETITIONS = 100000
     # from acro_new import create_acronym as new
     # from acro_new import EXAMPLE as n
     # from acro_old import create_acronym as old
     # from ceasar_new import caesar_encode as new
     # from ceasar_new import EXAMPLE as n
     # from ceasar_old import caesar_encode as old
-    from new_create_table import create_table as new
-    from new_create_table import EXAMPLE as n
-    from old_create_table import create_table as old
+    # from new_create_table import create_table as new
+    # from new_create_table import EXAMPLE as n
+    # from old_create_table import create_table as old
+    # from algorithms_new import EXAMPLE_SEARCH as example_search
+    # from algorithms_new import EXAMPLE_SORT as example_sort
+    # from algorithms_new import binary_search as binary_new
+    # from algorithms_old import binary_search as binary_old
+    # from algorithms_new import linear_search as linear_new
+    # from algorithms_old import linear_search as linear_old
+    # from algorithms_new import selection_sort as selection_new
+    # from algorithms_old import selection_sort as selection_old
+    # from algorithms_new import merge_sort as merge_new
+    # from algorithms_old import merge_sort as merge_old
+    # from algorithms_new import quick_sort as quick_new
+    # from algorithms_old import quick_sort as quick_old
     GROUPED_ARGS = True # if given all arguments as tuple change to True
 
     #####################################################################################
@@ -83,9 +95,43 @@ if __name__ == "__main__":
     else:
         t1, m1 = measure_function_performance(old, n, repetitions=REPETITIONS)
         t2, m2 = measure_function_performance(new, n, repetitions=REPETITIONS)
-    print('\nOld version:')
-    explain_review_solo(t1, m1, REPETITIONS)
-    print('\nNew version:')
-    explain_review_solo(t2, m2, REPETITIONS)
-    print('\nResults:')
-    compare_versions_review(t1, m1, t2, m2)
+    # binary_old_time, binary_old_memory = measure_function_performance(binary_old, *example_search, repetitions=REPETITIONS)
+    # binary_new_time, binary_new_memory = measure_function_performance(binary_new, *example_search, repetitions=REPETITIONS)
+    # linear_old_time, linear_old_memory = measure_function_performance(linear_old, *example_search, repetitions=REPETITIONS)
+    # linear_new_time, linear_new_memory = measure_function_performance(linear_new, *example_search, repetitions=REPETITIONS)
+    # selection_old_time, selection_old_memory = measure_function_performance(selection_old, example_sort, repetitions=REPETITIONS)
+    # selection_new_time, selection_new_memory = measure_function_performance(selection_new, example_sort, repetitions=REPETITIONS)
+    # merge_old_time, merge_old_memory = measure_function_performance(merge_old, example_sort, repetitions=REPETITIONS)
+    # merge_new_time, merge_new_memory = measure_function_performance(merge_new, example_sort, repetitions=REPETITIONS)
+    # quick_old_time, quick_old_memory = measure_function_performance(quick_old, example_sort, repetitions=REPETITIONS)
+    # quick_new_time, quick_new_memory = measure_function_performance(quick_new, example_sort, repetitions=REPETITIONS)
+    # print('\nOld version:')
+    # explain_review_solo(binary_old_time, binary_old_memory, REPETITIONS)
+    # print('\nNew version:')
+    # explain_review_solo(binary_new_time, binary_new_memory, REPETITIONS)
+    # print('\nResults:')
+    # compare_versions_review(binary_old_time, binary_old_memory, binary_new_time, binary_new_memory)
+    # print('\nOld version:')
+    # explain_review_solo(linear_old_time, linear_old_memory, REPETITIONS)
+    # print('\nNew version:')
+    # explain_review_solo(linear_new_time, linear_new_memory, REPETITIONS)
+    # print('\nResults:')
+    # compare_versions_review(linear_old_time, linear_old_memory, linear_new_time, linear_new_memory)
+    # print('\nOld version:')
+    # explain_review_solo(selection_old_time, selection_old_memory, REPETITIONS)
+    # print('\nNew version:')
+    # explain_review_solo(selection_new_time, selection_new_memory, REPETITIONS)
+    # print('\nResults:')
+    # compare_versions_review(selection_old_time, selection_old_memory, selection_new_time, selection_new_memory)
+    # print('\nOld version:')
+    # explain_review_solo(merge_old_time, merge_old_memory, REPETITIONS)
+    # print('\nNew version:')
+    # explain_review_solo(merge_new_time, merge_new_memory, REPETITIONS)
+    # print('\nResults:')
+    # compare_versions_review(merge_old_time, merge_old_memory, merge_new_time, merge_new_memory)
+    # print('\nOld version:')
+    # explain_review_solo(quick_old_time, quick_old_memory, REPETITIONS)
+    # print('\nNew version:')
+    # explain_review_solo(quick_new_time, quick_new_memory, REPETITIONS)
+    # print('\nResults:')
+    # compare_versions_review(quick_old_time, quick_old_memory, quick_new_time, quick_new_memory)
